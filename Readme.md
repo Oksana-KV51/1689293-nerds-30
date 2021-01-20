@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Оксана Каторкина](https://up.htmlacademy.ru/htmlcss/30/user/1689293).
-* Наставник: [Константин Антонов} (https://htmlacademy.ru/profile/id175216)
+* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/id175216)
 
 ---
 
