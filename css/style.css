@@ -21,9 +21,9 @@
     --basic-white: #ffffff;    
     --basic-dark: #eeeeee;
     --basic-modal: #444444;
-    --buton-rbasic: #fb565a;
-    --buton-gbasic: #00ca74;
-    --buton-ybasic: #efc849;
+    --buton-red: #fb565a;
+    --buton-green: #00ca74;
+    --buton-yellow: #efc849;
     --basic-neutral: #4d4d4d;   
   }
 
@@ -32,7 +32,7 @@
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -41,13 +41,16 @@
   }
 
   a {
-    text-decoration: none;
+    text-decoration: var(--basic-white);
   }
   
   img {
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
+
+ .spisok {
+  list-style: none;
+ }
 
 /* Main navigation */
 .main-header {
@@ -57,12 +60,7 @@
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
-  color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.site-navigation {
-  list-style: none;
 }
 
 /* User navigation */
@@ -79,45 +77,61 @@
 }
 
 /* Main slider*/
-.slider-lists {
-  list-style: none;
+.center {
+  background-color: var(--basic-dark);
+}
+
+.slider-first {
+  background-image: url("/img/nerds-index-slide1 1.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+}
+
+.slider-secund {
+  background-image: url("/img/nerds-index-slide2\ 1.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+}
+
+.slider-third {
+  background-image: url("/img/nerds-index-slide3\ 1.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
 }
 
 .slider-text {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color: var(--basic-black);
 }
 
 .button {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--buton-rbasic);
+  background-color: var(--buton-red);
   border: none;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #E74246;
+  background-color: #e74246;
 }
 
 .button.disabled,
 .button:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #D7373B;
+  background-color: #d7373b;
 }
 
 /* Main services*/
-.services-lists{
-  list-style: none;
-}
-
 .services-item h3 {
   font-weight: 700;
   font-size: 24px;
@@ -126,94 +140,92 @@
   text-align: center;
 }
 
-
-.services-button {
+.btn-red {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--buton-rbasic);
+  background-color: var(--buton-red);
   border: none;
 }
 
-.services-buttonr,
-.services-button:focus,
-.services-button:active {
-  background-color: #E74246;
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  background-color: #e74246;
 }
 
-.services-button:disabled,
-.services-button:disabled {
+.btn-red.disabled,
+.btn-red:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #D7373B;
+  background-color: #d7373b;
 }
 
-.button2 {
+.btn-green {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--buton-gbasic);
+  background-color: var(--buton-green);
   border: none;
 }
 
-.button2:hover,
-.button2:focus,
-.button2:active {
-  background-color: #00BC6C;
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  background-color: #00aa62;
 }
 
-.button2.disabled,
-.button2:disabled {
+.btn-green.disabled,
+.btn-green:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #00AA62;
+  background-color: #00bc6c;
 }
 
-.button3 {
+.btn-yellow {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--buton-ybasic);
+  background-color: var(--buton-yellow);
   border: none;
 }
 
-.button3:hover,
-.button3:focus,
-.button3:active {
-  background-color: #00BC6C;
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active {
+  background-color: #eab534;
 }
 
-.button3.disabled,
-.button3:disabled {
+.btn-yellow.disabled,
+.btn-yellow:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #00AA62;
+  background-color: #e5a722;
 }
 
-/* edge */
-.edge-list1-items {
-  list-style: none;
-}
-
-.edge-list1 h2 {
+/* advantage */
+.advantage-text h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px; 
 }
 
-.edge-list1 h4 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px; 
-}
-
-.edge-list2 h4 {
+.advantage-tabl h4 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -221,30 +233,25 @@
   text-align: center;
 }
 
-.edge-list2-items {
-  list-style: none;
-}
-
-.edge-number {
+.advantage-number {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
 
-.edge-percent {
+.advantage-percent {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
 }
 
-.edge-list2-items p {
+.advantage-tabl p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
 
 /* Contacts */
-
 .contacts-phone {
   color: inherit;
 }
@@ -263,9 +270,6 @@
 }
 
 /* Main footer */
-.footer-social {
-  list-style: none;
-}
 
 .text-footer h2 {
   font-weight: 700;
@@ -276,25 +280,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-}
-
-/* Social button */
-
-.social-button {
-  color: inherit;
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: #E74246;
-}
-.social-button { 
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #e1e1e1;
-  border: none;
 }
 
 /* Modal*/
@@ -317,11 +302,12 @@
   color: #444444;
 }
 
-.modal-button { 
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color:#E74246;
-  border: none;
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
 }
