@@ -49,7 +49,7 @@
   }
 
  .list-unstyle {
-  list-style: none;
+   list-style: none;
  }
 
 /* Main navigation */
@@ -64,6 +64,10 @@
 }
 
 /* User navigation */
+.site-navigation {
+  list-style: none;
+}
+
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
@@ -75,6 +79,8 @@
 .user-navigation a:focus {
   background-color: var(--basic-dark);
 }
+
+
 
 /* Main slider*/
 .center {
@@ -131,6 +137,40 @@
   background-color: #d7373b;
 }
 
+.page-catalog h1{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.price {
+  background-color: var(--basic-dark);
+}
+
+.arguments {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sorting-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 10px;
+}
+
 /* Main services*/
 .services-item h3 {
   font-weight: 700;
@@ -175,21 +215,21 @@
   line-height: 18px;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--buton-green);
+  background-color: var(--basic-dark);
   border: none;
 }
 
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active {
-  background-color: #00aa62;
+  background-color: #dfdfdf;
 }
 
 .btn-green.disabled,
 .btn-green:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #00bc6c;
+  background-color: #d5d5d5;
 }
 
 .btn-yellow {
@@ -213,6 +253,32 @@
 
 .btn-yellow.disabled,
 .btn-yellow:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #e5a722;
+}
+
+.btn-gray {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--buton-yellow);
+  border: none;
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active {
+  background-color: #eab534;
+}
+
+.btn-gray.disabled,
+.btn-gray:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #e5a722;
@@ -310,4 +376,43 @@
 
 .appointment-item input:focus {
   border-color: var(--special);
+}
+
+/* catalog*/
+.catalog .card-head {
+  background-color: #4d4d4d;
+}
+
+.modal-text a {
+  color: var(--basic-black);
+}
+
+.modal-text a:hover,
+.modal-text a:focus {
+  background-color: var(--basic-dark);
+}
+
+.modal-text h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: none;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-dark);
 }
