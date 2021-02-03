@@ -41,14 +41,14 @@
   }
 
   a {
-    text-decoration: var(--basic-white);
+    text-decoration: none;
   }
   
   img {
     max-width: 100%;    
   }
 
- .spisok {
+ .list-unstyle {
   list-style: none;
  }
 
@@ -82,19 +82,19 @@
 }
 
 .slider-first {
-  background-image: url("/img/nerds-index-slide1 1.png");
+  background-image: url("/img/nerds-index-slide1.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
 
-.slider-secund {
-  background-image: url("/img/nerds-index-slide2\ 1.png");
+.slider-second {
+  background-image: url("/img/nerds-index-slide2.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
 
 .slider-third {
-  background-image: url("/img/nerds-index-slide3\ 1.png");
+  background-image: url("/img/nerds-index-slide3.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
