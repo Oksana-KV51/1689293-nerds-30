@@ -6,7 +6,6 @@
     font-weight: 400;
     font-style: normal;   
   }
-
   @font-face {
     font-family: "Roboto"; 
     src: url(/fonts/robotobold.woff2) format("woff2"),
@@ -14,7 +13,6 @@
     font-weight: 700;
     font-style: normal;    
   }
-
   /* Variables */
   :root {
     --basic-black: #000000;
@@ -26,7 +24,6 @@
     --buton-yellow: #efc849;
     --basic-neutral: #4d4d4d;   
   }
-
   /* Global */
   .page-body {
     min-width: 960px;
@@ -39,78 +36,59 @@
     color: var(--basic-black);
     text-transform: none;        
   }
-
   a {
     text-decoration: none;
-  }
-  
+  }  
   img {
     max-width: 100%;    
   }
-
  .list-unstyle {
    list-style: none;
  }
-
 /* Main navigation */
 .main-header {
   background-color: var(--basic-dark);
 }
-
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
 }
-
 /* User navigation */
-.site-navigation {
-  list-style: none;
-}
-
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
 }
-
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: var(--basic-dark);
 }
-
-
-
 /* Main slider*/
 .center {
   background-color: var(--basic-dark);
 }
-
 .slider-first {
   background-image: url("/img/nerds-index-slide1.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
-
 .slider-second {
   background-image: url("/img/nerds-index-slide2.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
-
 .slider-third {
   background-image: url("/img/nerds-index-slide3.png");
   background-position: center, 0 0;
   background-repeat: no-repeat;
 }
-
 .slider-text {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
-
 .button {
   font: inherit;
   text-align: center;
@@ -123,54 +101,45 @@
   background-color: var(--buton-red);
   border: none;
 }
-
 .button:hover,
 .button:focus,
 .button:active {
   background-color: #e74246;
 }
-
 .button.disabled,
 .button:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #d7373b;
 }
-
 .page-catalog h1{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
-
 .page-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
-
 .catalog-price {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-
 .price {
   background-color: var(--basic-dark);
 }
-
 .arguments {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-
 .sorting-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 10px;
 }
-
 /* Main services*/
 .services-item h3 {
   font-weight: 700;
@@ -179,7 +148,6 @@
   text-transform: uppercase;
   text-align: center;
 }
-
 .btn-red {
   font: inherit;
   text-align: center;
@@ -192,20 +160,17 @@
   background-color: var(--buton-red);
   border: none;
 }
-
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active {
   background-color: #e74246;
 }
-
 .btn-red.disabled,
 .btn-red:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #d7373b;
 }
-
 .btn-green {
   font: inherit;
   text-align: center;
@@ -218,20 +183,17 @@
   background-color: var(--basic-dark);
   border: none;
 }
-
 .btn-green:hover,
 .btn-green:focus,
 .btn-green:active {
   background-color: #dfdfdf;
 }
-
 .btn-green.disabled,
 .btn-green:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #d5d5d5;
 }
-
 .btn-yellow {
   font: inherit;
   text-align: center;
@@ -244,20 +206,17 @@
   background-color: var(--buton-yellow);
   border: none;
 }
-
 .btn-yellow:hover,
 .btn-yellow:focus,
 .btn-yellow:active {
   background-color: #eab534;
 }
-
 .btn-yellow.disabled,
 .btn-yellow:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #e5a722;
 }
-
 .btn-gray {
   font: inherit;
   text-align: center;
@@ -270,27 +229,23 @@
   background-color: var(--buton-yellow);
   border: none;
 }
-
 .btn-gray:hover,
 .btn-gray:focus,
 .btn-gray:active {
   background-color: #eab534;
 }
-
 .btn-gray.disabled,
 .btn-gray:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: #e5a722;
 }
-
 /* advantage */
 .advantage-text h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px; 
 }
-
 .advantage-tabl h4 {
   font-weight: 700;
   font-size: 16px;
@@ -298,45 +253,37 @@
   text-transform: uppercase;
   text-align: center;
 }
-
 .advantage-number {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
-
 .advantage-percent {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
 }
-
 .advantage-tabl p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
-
 /* Contacts */
 .contacts-phone {
   color: inherit;
 }
-
 .contacts h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
 }
-
 .contacts p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
-
 /* Main footer */
-
 .text-footer h2 {
   font-weight: 700;
   font-size: 36px;
@@ -347,72 +294,59 @@
   font-size: 16px;
   line-height: 22px;
 }
-
 /* Modal*/
 .modal {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
 }
-
 .modal h2 {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
 }
-
 .modal text {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 }
-
 .appointment-item input {
   font: inherit;
   background-color: transparent;
   border: 2px solid var(--basic-black);
 }
-
 .appointment-item input:focus {
   border-color: var(--special);
 }
-
 /* catalog*/
 .catalog .card-head {
   background-color: #4d4d4d;
 }
-
 .modal-text a {
   color: var(--basic-black);
 }
-
 .modal-text a:hover,
 .modal-text a:focus {
   background-color: var(--basic-dark);
 }
-
 .modal-text h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
 }
-
 /* Breadcrumbs */
 .breadcrumbs {
   list-style: none;
 }
-
 .breadcrumbs a {
   color: var(--basic-black);
 }
-
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
   text-decoration: none;
 }
-
 .breadcrumbs-current {
   color: var(--basic-dark);
 }
