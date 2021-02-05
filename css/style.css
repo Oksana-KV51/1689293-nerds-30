@@ -1,8 +1,8 @@
 /*Fonts*/
 @font-face {
   font-family: "Roboto"; 
-  src: url(/fonts/roboto.woff2) format("woff2"),
-      url(/fonts/roboto.woff) format("woff");
+  src: url(fonts/roboto.woff2) format("woff2"),
+      url(fonts/roboto.woff) format("woff");
   font-weight: 400;
   font-style: normal;   
 }    
@@ -108,26 +108,16 @@ img {
   padding: 0 10px;
 }
 
-.slider {
-  background-color: var(--basic-dark);  
+.slider-list {
+  list-style: none; 
 }
 
-.slider-first {
-  background-image: url("/img/nerds-index-slide1.png");
-  background-position: center, 0 0;
-  background-repeat: no-repeat;
-}
-
-.slider-second {
-  background-image: url("/img/nerds-index-slide2.png");
-  background-position: center, 0 0;
-  background-repeat: no-repeat;
-}
-
-.slider-third {
-  background-image: url("/img/nerds-index-slide3.png");
-  background-position: center, 0 0;
-  background-repeat: no-repeat;
+.slider-itm {
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-dark);
 }
 
 .slider-text {
