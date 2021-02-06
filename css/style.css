@@ -48,7 +48,7 @@ img {
 }
 
 .list-unstyle {
- list-style: none;
+  list-style: none;
 }
   
 /* Main navigation */
@@ -359,10 +359,14 @@ img {
 }
 
 /*logo*/
+.logo {
+  margin-bottom: 46px;
+}
+  
 .logo-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 95px 104px 120px;
+  column-gap: 120px;
   margin: 0;
   padding: 0;
   list-style: none;  
