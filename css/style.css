@@ -495,32 +495,48 @@ a {
 
 /* catalog*/
 .page-catalog {
-  width: 1160px;
-  margin: 0 auto;
   display: grid;  
   grid-template-columns: 260px 1fr;
-  column-gap: 141px;
-  align-content: start;
+  column-gap: 140px;
+  align-content: start;  
 }
 
-.page-catalog h1{
+.page-catalog h1{  
   grid-column:1/-1;
   background-color: var(--basic-dark); 
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin-top: 108px; 
-  margin-bottom: 72px;
+  padding-top: 72px; 
+  padding-bottom: 108px;
 }
 
-.catalog .card-head {
+.catalog-big {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.catalog-item {
+  width: 360px;
+  min-height: 620px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item .card-head {
   background-color: #4d4d4d;
 }
 
 /* Breadcrumbs */
-.breadcrumbs {
-  list-style: none;
-}
 
 .breadcrumbs a {
   color: var(--basic-black);
