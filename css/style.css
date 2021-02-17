@@ -1,8 +1,8 @@
 /*Fonts*/
 @font-face {
   font-family: "Roboto"; 
-  src: url(fonts/roboto.woff2) format("woff2"),
-      url(fonts/roboto.woff) format("woff");
+  src: url(../fonts/roboto.woff2) format("woff2"),
+      url(../fonts/roboto.woff) format("woff");
   font-weight: 400;
   font-style: normal;   
 }    
@@ -101,15 +101,15 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a {
+.site-link {
   color: var(--basic-black);
   display: block;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-link:hover,
+.site-link:focus {
   background-color: var(--basic-dark);
 }
 
@@ -118,16 +118,14 @@ a {
   content: "";
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 0px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0; 
 }
 
-.main-navigation .site-link{
-  padding-left: 50px;
+.main-navigation .site-link {
+  padding-left: 40px;
   position: relative;
 }
 
@@ -142,13 +140,14 @@ a {
   background-color: var(--basic-dark);
   position: relative;
   top: 0px;
-  height: 430px;
+  min-height: 430px;
 }
 
 .slide {
   display: none;
 }
-.slide-current {
+
+.slide-active {
   display: block;
 }
 
@@ -224,11 +223,14 @@ a {
 .slider-controls {
   position: absolute;
   bottom: 96px;
-  left: 685px;
-  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  width: 88px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.slider-controls button:not(:last-of-type) {
+  margin-right: 17px;
 }
 
 .slider-controls button {
@@ -504,13 +506,14 @@ a {
   height: 416px;
  }
 
-.contacts-text {
+.contacts-block {
   position: absolute;
   background-color: var(--basic-white);
   width: 319px;
-  height: 309px;  
   left: 140px;
-  top: 54px;  
+  top: 54px; 
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-phone {
@@ -521,18 +524,29 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
-  margin-top: 49px;
-  margin-left: 50px;
+  text-transform: uppercase; 
+  margin: 0;  
+  padding-top: 50px;  
+  padding-left: 50px;
 }
 
-.contacts p {
+.contacts-block p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  margin-top: 22px;
-  margin-left: 50px;
+  margin: 0;  
+  padding-top: 22px;
+  padding-left: 50px;
+  padding-bottom: 37px;
 }
+
+.contacts a {
+  width: 219px;
+  margin-left: 50px;
+  margin-bottom: 47px;
+}
+
+
 
 /* Main footer */
 .main-footer {
@@ -549,10 +563,22 @@ a {
 }
 
 .social li {
+  display: flex;        
+}
+
+.social-button {
+  position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: var(--basic-dark);
+}
+
+.social-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .social-button:hover,
@@ -577,15 +603,46 @@ a {
   line-height: 22px;
 }
 
+
+/* Modal close */
+.appoiment-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 /* Modal*/
+/*
 .appoiment {
-  width: 960px;
-  height: 590px;
+  display: none;
+}*/
+
+.appoiment {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.appoiment-login {
+  top: 120px;
+  bottom: auto;
+  width: 960px;  
 }
 
 .appoiment h2 {
-  margin-top: 63px;
-  margin-left: 100px;
+  margin: 0;
+  padding-top: 63px;
+  padding-left: 100px;
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
@@ -599,38 +656,33 @@ a {
 }
 
 .appoiment-form {
-  width: 761px;
-  height: 353px;
+  margin: 0;
+  padding: 37px 100px 84px 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .appoiment-item {
-  width: 360px;
-  margin-top: 0;
-  margin-bottom: 34px;  
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
 }
 
 .appoiment-item label {
-  display: block;
-  font: inherit;
   margin-bottom: 9px;
 }
 
 .appoiment-item input {
-  width: 360px;
-  height: 50px;
   font: inherit;
   background-color: transparent;
   border: 2px solid #d7dcde;
   box-sizing: border-box;
   border-radius: 3px;
+  padding: 16px;
 }
 
-.appoiment-item textarea{
-  width: 760px;
-  height: 145px;
+.appoiment-item textarea {
   font: inherit;
   background-color: transparent;
   border: 2px solid #d7dcde;
