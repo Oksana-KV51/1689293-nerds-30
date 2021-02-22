@@ -83,7 +83,7 @@ a {
 /* logo */
 .logo {
   width: 160px;
-  height: 65px;  
+  height: 65px;
   margin-top: 49px;
   margin-right: 202px;
 }
@@ -143,36 +143,29 @@ a {
 }
 
 .slider {
-  background-color: var(--basic-dark);  
-}
-
-.slider-list li {
-  position: relative;  
+  background-color: var(--basic-dark); 
+  position: relative;
 }
 
 .slider-itm {
   min-width: 940px;
-  /*background-image: url("../img/nerds-index-slide1.png");
-  background-repeat: no-repeat; 
-  background-position:top right; */
   padding-top: 78px; 
   padding-bottom: 80px;
-  /*position: relative; */
 }
 
-.img1 {
+.slider-1 {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat; 
   background-position:top right;  
 }
 
-.img2 {
+.slider-2 {
   background-image: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat; 
   background-position:top right; 
 } 
 
-.img3 {
+.slider-3 {
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat; 
   background-position:top right;
@@ -190,19 +183,24 @@ a {
   margin-bottom: 38px;
 }
 
-.btn-slide {  
+.pushbutton {
   display: inline-block;
-  min-width: 132px;
+  max-width: 81px;
+  padding: 16px 40px;
   background-color: var(--buton-red);
-  border-radius: 3px;
-  padding: 16px 54px;  
+  border-radius: 3px; 
   text-align: center;
   color: var(--basic-white);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   vertical-align: middle;
-  text-transform: uppercase;
+  text-transform: uppercase;   
+}
+
+.btn-slide {  
+  min-width: 132px;   
+  padding: 16px 54px; 
 }
 
 .btn-slide:hover,
@@ -220,7 +218,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  top: 417px;
+  bottom: 96px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -264,19 +262,19 @@ a {
   flex-direction: column;  
 }
 
-.services-first {
+.block-web {
   min-width: 300px;
   min-height: 146px;
   background: url("../img/illustration-1.png");                                                   
 }
 
-.services-second {
+.block-apps {
   min-width: 300px;
   min-height: 146px;  
   background: url("../img/illustration-2.png")                                                    
 }
 
-.services-third {
+.block-presentation {
   min-width: 300px;
   min-height: 146px; 
   background: url("../img/illustration-3.png");                                                   
@@ -294,23 +292,6 @@ a {
   margin: 16px 0 80px 0;  
 }
 
-.btn-red {  
-  display: inline-block;
-  max-width: 81px;
-  /*min-width: 81px;*/
-  padding: 16px 40px;
-  background-color: var(--buton-red);
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  vertical-align: middle;
-  text-transform: uppercase;   
-}
-
 .btn-red:hover,
 .btn-red:focus,
 .btn-red:active {
@@ -325,21 +306,7 @@ a {
 }
 
 .btn-green {  
-  display: inline-block;
-  max-width: 81px;
-  /*min-width: 81px;*/
-  padding: 16px 40px;
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  vertical-align: middle;
-  text-transform: uppercase;
   background-color: var(--buton-green);
-  border: none;
 }
 
 .btn-green:hover,
@@ -356,21 +323,7 @@ a {
 }
 
 .btn-yellow { 
-  display: inline-block;
-  max-width: 81px;
-  /*min-width: 81px;*/
-  padding: 16px 40px;
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  vertical-align: middle;
-  text-transform: uppercase;
   background-color: var(--buton-yellow);
-  border: none;
 }
 
 .btn-yellow:hover,
@@ -387,22 +340,9 @@ a {
 }
 
 .btn-gray {
-  display: inline-block;
   max-width: 160px;
-  /*min-width: 81px;*/
-  height: 50px;
   padding: 17px 40px 15px 39px;
-  border-radius: 3px;
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  vertical-align: middle;
-  text-transform: uppercase;
   background-color: var(--buton-yellow);
-  border: none;
 }
 
 .btn-gray:hover,
@@ -483,7 +423,6 @@ a {
 .advantage-list li { 
   display: flex;
   flex-basis: 50px;
-  /*justify-content: flex-start;*/
   flex-wrap: wrap;
 }
 
@@ -493,7 +432,7 @@ a {
   line-height: 64px;
 }
 
-.advantage-percent { 
+.advantage-percent {
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
@@ -523,7 +462,7 @@ a {
 /* Contacts */
 .contacts {
   position: relative;
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .contacts img {
@@ -536,7 +475,8 @@ a {
   position: absolute;
   background-color: var(--basic-white);
   left: 140px;
-  top: 154px; 
+  top: 50%; 
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
 }
@@ -561,19 +501,8 @@ a {
 }
 
 .btn-contacts {  
-  display: inline-block;
-  box-sizing: 131px;
-  /*min-width: 131px;*/
-  background-color: var(--buton-red);
-  border-radius: 3px;
-  padding: 16px 44px;  
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  vertical-align: middle;
-  text-transform: uppercase;
+  min-width: 131px;
+  padding: 16px 44px;
 }  
   
 .btn-contacts:hover,
@@ -655,7 +584,6 @@ a {
   line-height: 22px;
 }
 
-
 /* Modal close */
 .appoiment-close {
   position: absolute;
@@ -700,6 +628,7 @@ a {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
+  margin: 0;
 }
 
 .appoiment-item {
@@ -707,17 +636,15 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-  
-}
-
-.appoiment-item {
-  display: flex; 
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;  
 }
 
 .appoiment-form p {
-  display: flex; 
-  flex-direction: column;
+  margin: 34px 0 0 0;
+  display: grid; 
+  grid-template-columns: 1fr;
 }
 
 .appoiment-item label {
@@ -725,24 +652,14 @@ a {
   margin-bottom: 9px;  
 }
 
-.appoiment-item input {
-  width: 360px;
-  padding: 16px;
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid #d7dcde;
-  box-sizing: border-box;
-  border-radius: 3px;
-  padding: 16px;  
-}
-
+.appoiment-item input,
 .appoiment-item textarea {
   font: inherit;
   background-color: transparent;
   border: 2px solid #d7dcde;
   box-sizing: border-box;
   border-radius: 3px;
-  padding: 16px;
+  padding: 16px;  
 }
 
 .appointment-item input {
@@ -756,18 +673,11 @@ a {
 }
 
 .btn-form {  
-  display: block;  
-  width: 259px;
-  background-color: var(--buton-red);
-  border-radius: 3px;
-  border: 0;
+  margin-top: 47px;
+  margin-right: auto;
+  min-width: 259px;
   padding: 16px 53px;
-  text-align: center;
-  color: var(--basic-white);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;  
-  text-transform: uppercase;
+  border: none;
 }
 
 .btn-form:hover,
