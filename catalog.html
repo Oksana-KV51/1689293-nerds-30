@@ -23,7 +23,7 @@
           <ul class="list-unstyle site-navigation">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-current"><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>       
         </nav>
@@ -36,50 +36,51 @@
     <main >
       <h1 class="main-heading">Магазин готовых шаблонов</h1> 
       <div class="page-catalog container"> 
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="
-                    width: 30%;
-                    margin-left: 20%">
+        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+          
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 30%;
+                      margin-left: 20%">
+                      </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 20%
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%">
                     </div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="
-                  left: 20%
-                "></div>
-                <div class="toggle toggle-max" tabindex="0" style="
-                  left: 50%">
-                  </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    ОТ <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    ДО <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  ОТ <input type="number" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  ДО <input type="number" name="max-price" value="15000">
-                </label>
-              </div>
-            </div>
-          </fieldset>      
+            </fieldset>      
             
-          <section class="filters"> 
+           
             <fieldset class="filter">
               <legend>Сетка:</legend>
               <ul class="list-unstyle">
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
-                  <label for="filter-shave">Адаптивная</label>
+                  <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="hair-care" id="filter-care" >
-                  <label for="filter-care">Фиксированная</label>
+                  <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="accessories" id="filter-accessories">
-                  <label for="filter-accessories">Резиновая</label>
+                  <label for="filter-strech">Резиновая</label>
                 </li>
               </ul>
             </fieldset>     
@@ -92,24 +93,24 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mr-natty" id="filter-mr-natty">
-                  <label for="filter-mr-natty">Блок преимуществ</label>
+                  <label for="filter-edge">Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suavecito" id="filter-suavecito" checked>
-                  <label for="filter-suavecito">Новости</label>
+                  <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
-                  <label for="filter-malin-goetz">Галерея</label>
+                  <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="murrays" id="filter-murrays">
-                  <label for="filter-murrays">Корзина</label>
+                  <label for="filter-basker">Корзина</label>
                 </li>            
               <ul>
             </fieldset> 
-            <button class="push-button btn-gray" type="submit">Показать</button>     
-          </section> 
+            <button class="btn-gray" type="submit">Показать</button>     
+          
         </form>
 
         <section class="products">  
@@ -120,10 +121,10 @@
                 <a class="breadcrumbs-link" href="#">По цене</a>
               </li>
               <li>
-                <a class="breadcrumbs-link" href="#">По типу</a>
+                <a class="breadcrumbs-link breadcrumbs-ncurrent" href="#">По типу</a>
               </li>
               <li>
-                <a class="breadcrumbs-link" href="#">По назначению</a>
+                <a class="breadcrumbs-link breadcrumbs-ncurrent" href="#">По назначению</a>
               </li> 
             </ul> 
             <div class="breadcrumbs-nav">
@@ -158,7 +159,7 @@
                 <div class="modal-list catalog-price">
                   <a href="#"><h2>Sedona</h2></a>            
                   <p>Информационный сайт для туристов</p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a>                          
+                  <a class="btn-card" href="#">9 900 ₽</a>                          
                 </div> 
               </li>
               <li class="catalog-item">
@@ -175,7 +176,7 @@
                   <p>Продуктовый лендинг
                     приложения для iOS и Android
                   </p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a> 
+                  <a class="btn-card" href="#">9 900 ₽</a> 
                 </div> 
               </li>
               <li class="catalog-item"> 
@@ -192,7 +193,7 @@
                   <p>Сайт салона красоты.
                     Для мужчин, да.
                   </p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a> 
+                  <a class="btn-card" href="#">9 900 ₽</a> 
                 </div>   
               </li>
               <li class="catalog-item">
@@ -209,7 +210,7 @@
                   <p>Интернет-магазин
                     вязаных игрушек
                   </p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a>  
+                  <a class="btn-card" href="#">9 900 ₽</a>  
                 </div> 
               </li> 
               <li class="catalog-item">
@@ -226,7 +227,7 @@
                   <p>Лендинг курсов повышения
                     квалификации
                   </p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a> 
+                  <a class="btn-card" href="#">9 900 ₽</a> 
                 </div> 
               </li>
               <li class="catalog-item">
@@ -243,7 +244,7 @@
                   <p>Промо-сайт производителя
                     крафтового кваса
                   </p>
-                  <a class="push-button btn-card" href="#">9 900 ₽</a> 
+                  <a class="btn-card" href="#">9 900 ₽</a> 
                 </div>
               </li>              
             </ul>   
@@ -355,5 +356,4 @@
     </div>
     
   </body>
- 
 </html>

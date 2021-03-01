@@ -104,7 +104,7 @@ a {
   margin-right: 45px;
 }
 
-.site-navigation li {
+.site-navigation-current {
   border-bottom: 2px solid var(--buton-red); 
 }
 
@@ -188,7 +188,7 @@ a {
 }
 
 .push-button {
-  display: inline-block;
+  /*display: inline-block;*/
   max-width: 81px;
   padding: 16px 40px;
   background-color: var(--buton-red);
@@ -680,7 +680,6 @@ a {
 
 /* catalog*/
 .main-heading {  
-  /*grid-column:1/-1;*/
   background-color: var(--basic-dark); 
   font-weight: 500;
   font-size: 55px;
@@ -716,7 +715,7 @@ a {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 48px;
 }
 
 .range-controls {
@@ -824,6 +823,9 @@ a {
   text-transform: uppercase;
   margin: 0;  
 }
+.breadcrumbs-ncurrent {
+  opacity: 0.3;
+}
 
 .breadcrumbs-nav {
   display: grid;
@@ -865,12 +867,11 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 14px;
 }
 
 .filter-option {
-  margin-bottom: 19px;
-  padding-left: 45px;
+  padding-top: 16px;
+  padding-left: 36px;
 }
 
 .filter-option label {
@@ -883,23 +884,27 @@ a {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -36px;
   top: 0;
-  width: 23px;
-  height: 23px;
+  width: 19px;
+  height: 19px;
   border: 2px solid var(--basic-neutral);
+  opacity: 0.4;
+  /*transform: translateY(-50%);*/
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -38px;
+  top: 2px;
+  left: -32px;
   width: 21px;
   height: 17px;
   background-image: url("../img/cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+  /*transform: translateY(-50%);*/
 }
 
 .filter-input-checkbox:hover + label,
@@ -910,33 +915,42 @@ a {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: -1px;
-  width: 25px;
-  height: 25px;
+  left: -38px;
+  top: -6px;
+  width: 21px;
+  height: 21px;
   border: 4px solid var(--basic-neutral);
   border-radius: 50%;
+  opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -30px;
+  left: -27px;
+  top: 4px;
   width: 9px;
   height: 9px;
   background-color: var(--basic-neutral);
   border-radius: 50%;
+  opacity: 0.4;
 }
-
+/*у меня получается оформить кнопку только 
+таким дурацким способом. Теория здесь не срабатывает. 
+Почему?*/
 .btn-gray {
-  display:inline-block;
-  margin: 0 auto;
-  max-width: 83px;
+  min-width: 83px;
   border: none;
   padding: 16px 88px;
   color: var(--basic-black);
   background-color: var(--basic-dark);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px; 
 }
 
 .btn-gray:hover,
@@ -961,6 +975,7 @@ a {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  align-items:center;
   margin: 0;
 }
 
@@ -969,15 +984,14 @@ a {
 }
 
 .pagination-item a {
-  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  padding: 16px 20px;
+  padding: 13px 17px;
   color: var(--basic-black);
   background-color: var(--basic-dark);
-  background: #FFFFFF;
-  border: 3px solid #DBDBDB;
+  background:var(--basic-dark);
+  border: 3px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -1002,16 +1016,12 @@ a {
 }
 
 .btn-pagination {
-  max-width: 105px;
-  padding: 16px 77px;
+  min-width: 105px;
+  padding: 16px 77px;  
   border-radius: 3px;
+  text-align: center;
   color: var(--basic-black);
   background-color: var(--basic-dark);
-}
-
-.btn-card {
-  max-width: 56px;
-  padding: 16px 72px;
 }
 
 /*catalog*/
@@ -1020,10 +1030,11 @@ a {
   flex-wrap: wrap;
   margin-top: 48px;
   margin-bottom: 55px;
-  
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   width: 360px;
   margin-right: 40px;
   margin-bottom: 30px;
@@ -1036,6 +1047,7 @@ a {
 
 .card-head {
   background-color: #4d4d4d;
+  opacity: 0.12;
   padding-top: 13px;
   padding-bottom: 13px;  
 }
@@ -1055,20 +1067,17 @@ a {
 .card-path li:not(:last-of-type) {
   margin-right: 9px;
 }
-/*
-.modal-list {
-  display: none;
-}*/
 
 .catalog-price {
-  width: 360px;
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   background-color: var(--basic-dark);
   position: absolute;
   bottom: 0;
-  padding: 26px 0 44px 0;
+  padding: 26px 52px 44px 52px;
 }
 
 .catalog-price h2 {
@@ -1077,17 +1086,30 @@ a {
   line-height: 30px;
   color: var(--basic-black);  
   text-align: center;
-  padding-bottom: 12px;
   margin: 0;
 }
 
 .catalog-price p {
   text-align: center;
-  margin: 0 52px;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  margin: 0;
 }
-
-.btn-card {
-  margin: 32px 80px 0 80px;
+/*у меня получается оформить кнопку только 
+таким дурацким способом. Теория здесь не срабатывает. 
+Почему?*/
+.btn-card { 
+  min-width: 56px;
+  padding: 16px 40px;
+  background-color: var(--buton-red);
+  border-radius: 3px; 
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-transform: uppercase;  
 }
 
 .modal-list a {
@@ -1099,5 +1121,6 @@ a {
   background-color: var(--basic-dark);
 }
 
-
-
+.card-head:hover {
+  opacity: 1;
+}
