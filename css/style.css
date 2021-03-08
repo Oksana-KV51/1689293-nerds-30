@@ -88,6 +88,10 @@ a {
   margin-right: 202px;
 }
 
+.logo-catalog:active {
+  opacity: 0.3;
+}
+
 .basket {
   margin-left: auto;
   margin-bottom: 9px;
@@ -127,7 +131,12 @@ a {
 .site-navigation a:focus,
 .site-link:hover,
 .site-link:focus {
-  background-color: var(--basic-dark);
+  color: var(--buton-red);
+}
+
+.site-navigation a:active,
+.site-link:active {
+  opacity: 0.3;  
 }
 
 /* Login link */
@@ -164,7 +173,7 @@ a {
 .slider-itm {
   min-width: 940px;
   padding-top: 78px; 
-  padding-bottom: 80px;
+  padding-bottom: 96px;
 }
 
 .slider-1 {
@@ -194,7 +203,7 @@ a {
 
 .slider-text-mini {
   margin-top: 25px;
-  margin-bottom: 38px;
+  margin-bottom: 54px;
 }
 
 .push-button {
@@ -217,15 +226,11 @@ a {
 }
 
 .btn-slide:hover,
-.btn-sllide:focus:focus,
-.btn-slide:active {
+.btn-sllide:focus {
   background-color: #e74246;
 }
 
-.btn-slide.disabled,
-.btn-slide:disabled {
-  cursor: default;
-  opacity: 0.5;
+.btn-slide:active {
   background-color: #d7373b;
 }
 
@@ -302,20 +307,16 @@ a {
 }
 
 .services-item p {
-  margin: 16px 0 80px 0;  
+  margin: 16px 0 32px 0;
 }
 
 .btn-red:hover,
-.btn-red:focus,
-.btn-red:active {
+.btn-red:focus {
   background-color: #e74246;
 }
 
-.btn-red.disabled,
-.btn-red:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: #d7373b;
+.btn-red:active {
+  background-color:#d7373b;
 }
 
 .btn-green {  
@@ -323,15 +324,11 @@ a {
 }
 
 .btn-green:hover,
-.btn-green:focus,
-.btn-green:active {
+.btn-green:focus {
   background-color: #00bc6c;
 }
 
-.btn-green.disabled,
-.btn-green:disabled {
-  cursor: default;
-  opacity: 0.5;
+.btn-green:active {
   background-color: #00aa62;
 }
 
@@ -340,15 +337,11 @@ a {
 }
 
 .btn-yellow:hover,
-.btn-yellow:focus,
-.btn-yellow:active {
+.btn-yellow:focus {
   background-color: #eab534;
 }
 
-.btn-yellow.disabled,
-.btn-yellow:disabled {
-  cursor: default;
-  opacity: 0.5;
+.btn-yellow:active {
   background-color: #e5a722;
 }
 
@@ -500,17 +493,13 @@ a {
 }  
   
 .btn-contacts:hover,
-.btn-contacts:focus:focus,
-.btn-contacts:active {
+.btn-contacts:focus:focus {
   background-color: #e74246;
 }  
 
-.btn-contacts.disabled,
-.btn-contacts:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: #d7373b;
-}  
+.btn-contacts:active {
+  background-color: #d7373B;
+} 
 
 /* Main footer */
 .main-footer {
@@ -550,12 +539,16 @@ a {
 
 .social-button:hover,
 .social-button:focus {
-  background-color: var(--basic-white);
+  background-color: #e74246;
+}
+
+.social-button:active {
+  background-color: #d7373b;
 }
 
 .social-button:hover path,
 .social-button:focus path {
-  fill: var(--basic-black);
+  fill: var(--basic-white);
 }
 
 .text-footer {
@@ -629,7 +622,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;  
@@ -643,7 +635,8 @@ a {
 
 .appoiment-item label {
   display: block;
-  margin-bottom: 9px;  
+  margin-bottom: 9px;
+  color: var(--basic-black);
 }
 
 .appoiment-item input,
@@ -653,17 +646,20 @@ a {
   border: 2px solid #d7dcde;
   box-sizing: border-box;
   border-radius: 3px;
-  padding: 16px;  
+  padding: 16px;
+  color: var(--basic-modal);
+  opacity: 0.5;
 }
 
-.appointment-item input {
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid var(--basic-black);
+.appointment-item input:hover {
+  border-color: #b4b9bb;
 }
 
-.appointment-item input:focus {
-  border-color: var(--special);
+.appointment-item input:focus,
+.appointment-item label:focus,
+.appointment-item textarea:focus {
+  border-color: var(--basic-black);
+  color: var(--basic-modal);
 }
 
 .btn-form {  
@@ -680,11 +676,13 @@ a {
   background-color: #e74246;
 }
 
-.btn-form.disabled,
-.btn-form:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: #d7373b;
+.appoiment-close path:hover,
+.appoiment-close path:focus {
+  fill-opacity: 1;
+}
+
+.appoiment-close path:active {
+  fill-opacity: 0.1;
 }
 
 /* catalog*/
@@ -832,8 +830,27 @@ a {
   text-transform: uppercase;
   margin: 0;  
 }
+
 .breadcrumbs-ncurrent {
   opacity: 0.3;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 1;
+}
+
+.breadcrumbs-nav path:hover,
+.breadcrumbs-nav path:focus {
+  fill-opacity: 1;
+}
+
+.breadcrumbs-nav path:active {
+  fill: #231f20;
 }
 
 .breadcrumbs-nav {
@@ -903,21 +920,7 @@ a {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
-  display: block;
-  position: absolute;
-  content: "";
-  left: 4px;
-  width: 21px;
-  height: 17px;
-  background-image: url("../img/cross.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.4;
-}
-
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
+.filter-input-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
@@ -948,11 +951,6 @@ a {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.filter-input-radio:hover + label,
-.filter-input-radio:focus + label {
-  opacity: 1;
 }
 
 .btn-gray {
@@ -1022,11 +1020,17 @@ a {
 }
 
 .pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:focus {
+  background-color: #d5d5d5;
 }
 
 .btn-pagination {
@@ -1092,7 +1096,7 @@ a {
   background-color: var(--basic-dark);
   position: absolute;
   bottom: 0;
-  padding: 26px 80px 44px;
+  padding: 26px 60px 44px;
   display: none;
 }
 
@@ -1124,12 +1128,18 @@ a {
   color: var(--buton-red);
 }
 
+.catalog-price h2:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
 .btn-card {
   display: flex;
   justify-content: center;
   min-width: 56px;
   padding: 16px 40px;
-  /*margin: 0 28px;*/
+  margin: 0 20px;
   background-color: var(--buton-red);
   border-radius: 3px; 
   text-align: center;
