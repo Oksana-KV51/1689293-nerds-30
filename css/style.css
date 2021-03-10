@@ -252,16 +252,23 @@ a {
   padding: 0;
   width: 18px;
   height: 18px;
-  background-color: var(--basic-white) ;
-  border: 2px solid #ffffff;
+  background-color: var(--basic-white);
   border-radius: 50%;
-  cursor: pointer;
+  border-width: 0;
 }
 
-.slider-controls .current {
-  width: 8px;
-  height: 8px;
-  border: 2px solid #C1C1C1;
+.slider-controls .current:before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 2px solid #c1c1c1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: var(--basic-white);
+  transform: translateY(-50%);
 }
 
 /*services*/
@@ -591,7 +598,6 @@ a {
 }
 
 /* Modal*/
-
 .appoiment {
   display: none;
 }
@@ -1140,7 +1146,6 @@ a {
   opacity: 0.3;
 }
 
-
 .btn-card {
   display: flex;
   justify-content: center;
@@ -1164,5 +1169,3 @@ a {
 .btn-card:focus {
   background-color: #e74246;
 }
-
-
