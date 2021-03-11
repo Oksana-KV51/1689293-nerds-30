@@ -580,7 +580,6 @@ a {
   line-height: 22px;
 }
 
-
 .modal-show {
   display: block;
 }
@@ -755,9 +754,10 @@ a {
 }
 
 .range-controls .bar {
-  width: 70%;
   height: 2px;
   background: #00ca74;
+  width: 30%;
+  margin-left: 20%;
 }
 
 .range-controls .toggle {
@@ -775,11 +775,11 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 20%;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 50%;
 }
 
 .price-controls {
