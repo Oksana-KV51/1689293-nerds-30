@@ -1,11 +1,13 @@
-const btncontacts = document.querySelector(".btn-contacts");
+const mapLink = document.querySelector(".btn-contacts");
 const popup = document.querySelector(".appoiment");
-const close = document.querySelector(".appoiment-close");
-btncontacts.addEventListener("click", function (evt) {
+const mapClose = document.querySelector(".appoiment-close");
+
+mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();       
     popup.classList.add("modal-show");
 });
-close.addEventListener("click", function (evt) {
+
+mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();       
     popup.classList.remove("modal-show");
 }); 
