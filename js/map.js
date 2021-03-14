@@ -1,10 +1,5 @@
-const ImgСlose = document.querySelector(".contacts-map");
-const mapPopup = document.querySelector(".modal-map-none");
+const mapImge = document.querySelector(".contacts-map");
+const mapFrame = document.querySelector(".map-frame");
 
-mapPopup.addEventListener("DOMContentLoaded", function () {
-  mapPopup.classList.add("modal-map-show");
-});
-
-ImgСlose.addEventListener("DOMContentLoaded", function () {
-  ImgСlose.add("contacts-map-none");
-});
+mapImge.classList.add("hidden");
+mapFrame.classList.add("modal-map-show");

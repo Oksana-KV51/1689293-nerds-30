@@ -241,7 +241,7 @@ a {
   transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
-  z-index: 20; /*чтобы кнопки были поверх всего слайдера*/
+  z-index: 20; /*поверх*/
 }
 
 .slider-controls button:not(:last-of-type) {
@@ -464,11 +464,11 @@ a {
 }
 
 .contacts-map {
-  display: block;  
- }
+  display: block;
+}
 
- .contacts-map-none {
-   display: none;
+.contacts-map.hidden {
+  display: none;
  }
 
 .contacts-block {
@@ -517,24 +517,13 @@ a {
 } 
 
 /*map */
-.modal-map-show {
-  display: block;
-}
-
 .modal-map-none {
   display: none;
 }
 
-.modal-map iframe {
+.map-frame .show {
   display: block;
-  border: none;
-  bottom: 222px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-wrap: wrap;
 }
-
 
 /* Main footer */
 .main-footer {
@@ -607,9 +596,7 @@ a {
   line-height: 22px;
 }
 
-
 /* Modal close */
-
 .appoiment-close {
   position: absolute;
   top: 78px;
