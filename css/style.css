@@ -20,6 +20,10 @@
 }
   
  /* Global */
+ body {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+} 
+
 .page-body {
   max-width: 1440px;
   min-width: 960px;
@@ -80,7 +84,7 @@ a {
   align-items: flex-end;  
 }
 
-/* logo */
+/* logo*/
 .logo {
   width: 160px;
   height: 65px;
@@ -274,7 +278,7 @@ a {
 /*services*/
 .services {
   padding: 80px 0;  
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--basic-dark);
 }
 
 .services-list {  
@@ -358,7 +362,7 @@ a {
 .advantage { 
   display: flex;
   justify-content: space-between; 
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--basic-dark);
   padding: 39px 0 75px 0;
 }
 
@@ -446,7 +450,7 @@ a {
 /*logo*/
 .projects {
   padding: 42px 0; 
-  border-bottom: 2px solid #eeeeee; 
+  border-bottom: 2px solid var(--basic-dark); 
   margin-bottom: 80px;
 }
   
@@ -503,7 +507,7 @@ a {
 }
 
 .btn-contacts {  
-  min-width: 131px;
+  min-width: 132px;
   padding: 16px 44px;
 }  
   
