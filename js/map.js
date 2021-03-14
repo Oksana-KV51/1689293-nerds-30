@@ -1,12 +1,10 @@
-const mapPopup = document.querySelector(".modal-visually");
-const map = document.querySelector(".contacts-map");
+const ImgСlose = document.querySelector(".contacts-map");
+const mapPopup = document.querySelector(".modal-map-none");
 
-mapPopup.addEventListener("domcontentloaded", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
+mapPopup.addEventListener("DOMContentLoaded", function () {
+  mapPopup.classList.add("modal-map-show");
 });
 
-map.addEventListener("domcontentloaded", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-visually");
+ImgСlose.addEventListener("DOMContentLoaded", function () {
+  ImgСlose.add("contacts-map-none");
 });
